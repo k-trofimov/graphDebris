@@ -1,0 +1,10 @@
+fastapi==0.91.0
+uvicorn==0.20.0
+fastapi-utils
+cocojson
+python-multipart
+shapely
+exif
+uvicorn
+matplotlib
+opencv-python==4.5.5.64
