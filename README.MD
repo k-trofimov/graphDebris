@@ -10,28 +10,28 @@ There is no data validation or error handling. It will fail hard if provided wit
 #### #TODO
 - [ ] Add unit-tests
 - [ ] Add data validation
-- [ ] Soft fail if data is incomplete.
+- [ ] Soft fail if data is incomplete
 
 
 
 #### Future improvemnnts
 - Add frontend
-- Add persistence (let users upload files one)
-- Integrate with DB to record metadata and statistics. 
-- Add load balancing and replecation
+- Add persistence (let users upload files one ny one)
+- Integrate with DB to record metadata and statistics 
+- Add load balancing and replication
 
-#### Running service: \
-To start the service run `docker-compose up` \
+#### Running service: 
+To start the service run `docker-compose up` 
 
 Run the following curl to get an output for sample input
 ```
 curl --location --request POST 'http://0.0.0.0:8000/api/debris/submit' \
---form 'files=@"/Users/konstantintrofimov/PycharmProjects/graphDebris/inputs/11_2022.json"' \
---form 'files=@"/Users/konstantintrofimov/PycharmProjects/graphDebris/inputs/10_2022.json"' \
---form 'files=@"/Users/konstantintrofimov/PycharmProjects/graphDebris/inputs/09_2022.json"' \
---form 'files=@"/Users/konstantintrofimov/PycharmProjects/graphDebris/inputs/DJI_0079 (3).JPG"' \
---form 'files=@"/Users/konstantintrofimov/PycharmProjects/graphDebris/inputs/DJI_0070 (3).JPG"' \
---form 'files=@"/Users/konstantintrofimov/PycharmProjects/graphDebris/inputs/DJI_0062 (3).JPG"'> graph2.png
+--form 'files=@"./inputs/11_2022.json"' \
+--form 'files=@"./inputs/10_2022.json"' \
+--form 'files=@"./inputs/09_2022.json"' \
+--form 'files=@"./inputs/DJI_0079 (3).JPG"' \
+--form 'files=@"./inputs/DJI_0070 (3).JPG"' \
+--form 'files=@"./inputs/DJI_0062 (3).JPG"'> graph2.png
 ```
 
 Check grapgh2.png for output
